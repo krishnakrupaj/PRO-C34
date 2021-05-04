@@ -29,11 +29,8 @@ function setup() {
    rectMode(CENTER)
    dog = createSprite(250,300,150,150);
    rectMode(CENTER)
-    dog.addImage(dogIm);  
-  
+    dog.addImage(dogIm);   
 }
-
-
 function draw() {  
   background(46,139,87);
 
@@ -45,12 +42,12 @@ function draw() {
    drawSprites();
   //add styles here
   
-  fill("yellow")
+  fill("pink")
   textSize(20);
-  text(250,30,"MILK STOCK LEFT =");
+  text("MILK STOCK LEFT ="+foods,20,30);
   fill("lightblue")
-  textSize(20);
-  text(250,30,"Note: press Up arrow to feed PUP");
+  textSize(30);
+  text("Note: press Up arrow to feed PUP",40,460);
 
 }
 function readstock(data){
